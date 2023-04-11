@@ -47,11 +47,11 @@
                     <p>Стать:</p>
                     <label class="radio">
                         <div>Чоловіча</div>
-                        <input name="radio" type="radio" checked>
+                        <input name="gender" type="radio" checked>
                     </label>
                     <label class="radio">
                         <div>Жіноча</div>
-                        <input name="radio" type="radio">
+                        <input name="gender" type="radio">
                     </label>
                 </div>
                 <div class="form__field">
@@ -67,6 +67,14 @@
                         <option value="JV">Java</option>
                         <option value="PT">Python</option>
                     </select>
+                </div>
+                <br>
+                <div class="form__textarea">
+                    <label for="txta1">
+                        <div>Повна адреса:</div>
+                        <textarea name="address" id="txta1" cols="30" rows="5"
+                            placeholder="Країна, регіон, місто/селице, вулиця" required></textarea>
+                    </label>
                 </div>
                 <div class="form__checkbox">
                     <p>
