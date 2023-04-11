@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <li><a href="./index.html">Back</a></li>
+            <li><a href="./login.html">Log In</a></li>
+        </nav>
+    </header>
+    <section>
+        <div class="container">
+            <h1>Зареєструватись</h1>
+            <form class="form" action="">
+                <div class="form__field">
+                    <label for="inp1">
+                        <div>Повне ім'я:</div>
+                        <input id="inp1" name="name" type="text" placeholder="Повне ім'я" required>
+                    </label>
+                </div>
+                <div class="form__field">
+                    <label for="inp2">
+                        <div>E-Mail:</div>
+                        <input id="inp2" name="email" type="email" placeholder="E-Mail" required>
+                    </label>
+                </div>
+                <div class="form__field">
+                    <label for="inp3">
+                        <div>Пароль:</div>
+                        <input id="inp3" name="password" type="password" required>
+                    </label>
+                </div>
+                <div class="form__field">
+                    <label for="inp4">
+                        <div>Пароль ще раз:</div>
+                        <input id="inp4" name="password" type="password" required>
+                    </label>
+                </div>
+                <div class="form__radio">
+                    <p>Стать:</p>
+                    <label class="radio">
+                        <div>Чоловіча</div>
+                        <input name="radio" type="radio" checked>
+                    </label>
+                    <label class="radio">
+                        <div>Жіноча</div>
+                        <input name="radio" type="radio">
+                    </label>
+                </div>
+                <div class="form__field">
+                    <label for="inp5">
+                        <div>Вік:</div>
+                        <input id="inp5" name="age" type="number" required>
+                    </label>
+                </div>
+                <div class="form__select">
+                    <p>Обери курс</p>
+                    <select name="courses" id="sel1">
+                        <option value="FE">Front-End</option>
+                        <option value="JV">Java</option>
+                        <option value="PT">Python</option>
+                    </select>
+                </div>
+                <div class="form__checkbox">
+                    <p>
+                        <input type="checkbox" required>
+                        Я погоджуюсь з обробкою персональних даних
+                    </p>
+                </div>
+                <button type="submit">Зареєструватись</button>
+                <button type="reset">Очистити форму</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
