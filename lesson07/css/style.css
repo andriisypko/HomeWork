@@ -1,0 +1,207 @@
+/* Variable */
+:root {
+    /* fonts */
+    --main-fonts: 'Open Sans', sans-serif;
+
+    /* colors */
+    --color-grey: #828282;
+    --color-black: #070707;
+}
+
+/* Variable end */
+
+/* Global */
+.container {
+    max-width: 970px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: var(--main-fonts);
+    color: var(--color-black);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+h2 {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Global end */
+
+/* Header */
+.header__list {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 40px;
+    border-bottom: 1px solid var(--color-grey);
+}
+
+.header__link {
+    color: var(--color-grey);
+}
+
+.header__item:hover {
+    font-weight: bold;
+}
+
+/* Header end */
+
+/* first-screen */
+.first-screen__title {
+    color: var(--color-black);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    margin: 12px 0 50px 0;
+}
+
+.first-screen__img {
+    width: 100%;
+    background: url(../img/photox940.jpg);
+}
+
+/* First-screen end */
+
+/* About-me */
+.about-me {
+    background-color: #F6F6F6;
+}
+
+.sub-title.about-me__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    /* Як зробити відступ зверху? */
+}
+
+.about-me__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+    /* Як зробити контейнер і зробити песередині, як в макеті? */
+    /* Як зробити відступ знизу? */
+}
+
+/* About-me end */
+
+/* Skills */
+.skills__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    margin: 100px 0 20px 0;
+}
+
+.skills__text {
+    text-align: center;
+    font-style: normal;
+    margin-bottom: 50px;
+}
+
+.skills__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 97px;
+}
+
+/* Skills end */
+
+/* Portfolio */
+.portfolio {
+    background-color: #F6F6F6;
+}
+
+.sub-title.portfolio__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    margin: 100px 0 50px 0;
+    /* Як зробити відступ зверху? */
+}
+
+.portfolio__text {
+    text-align: center;
+    text-decoration-line: underline;
+    margin: 40px 0 70px 0;
+    /* Як зробити відступ знизу? */
+}
+
+/* Portfolio end */
+
+/* Contacts */
+.contacts__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    margin: 100px 0 20px 0;
+}
+
+.contacts__header-text {
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contacts__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+}
+
+.contacts__button {
+    color: #FFFFFF;
+    padding: 0px 16px;
+    background: var(--color-black);
+    border-radius: 22px;
+    width: 180px;
+    height: 44px;
+    /* Як поставити посередині? */
+}
+
+.text.contacts__text-me {
+    color: var(--color-grey);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    margin: 60px 0 100px 0;
+}
+
+.contacts__link:hover {
+    opacity: 0.5;
+}
+
+.contacts__button:hover {
+    background-color: #0707073d;
+}
+
+/* Contacts end */
