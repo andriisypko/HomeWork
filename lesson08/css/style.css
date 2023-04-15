@@ -1,0 +1,140 @@
+/* Global */
+.wrapper {
+    background-color: #3B3F45;
+    height: 100vh;
+    margin: 10px;
+
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 534px;
+    width: 100%;
+}
+
+input {
+    width: 19px;
+    height: 19px;
+}
+
+/* Global end */
+
+
+/* Header */
+.header {
+    background-color: #4A4F56;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Roboto';
+    font-style: normal;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FF8984;
+    padding: 5px;
+}
+
+.title+.header__text {
+    font-family: 'Roboto';
+    font-style: normal;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FF8984;
+    padding: 10px;
+}
+
+/* Header end */
+
+
+/* Menu */
+.menu__list {
+    margin: 20px 0 20px 0;
+}
+
+.menu__item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 15px;
+    padding: 12px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.menu__item:nth-child(1):after {
+    content: "(for the next lessons about CSS)";
+    color: #FFFFFF;
+}
+
+.menu__item:nth-child(2):after {
+    content: "(for more CSS manipulations)";
+    color: #FFFFFF;
+}
+
+.menu__item:nth-child(3):after {
+    content: "(because they are awesome)";
+    color: #FFFFFF;
+}
+
+.menu__item:nth-child(4):after {
+    content: "(hm... they always dissapear)";
+    color: #FFFFFF;
+}
+
+.menu__item:nth-child(6):after {
+    content: "(for my friends)";
+    color: #FFFFFF;
+}
+
+
+.menu__item:nth-child(even) {
+    background-color: #7A7593;
+}
+
+.menu__item:nth-child(odd) {
+    background-color: #88839E;
+}
+
+.menu__item:hover {
+    border-bottom: 2px;
+    border-top: 2px;
+    border-color: white;
+    border-style: solid;
+    background-color: rgb(224, 187, 248);
+    cursor: pointer;
+}
+
+.menu__item:active {
+    background-color: rgb(235, 88, 78);
+}
+
+/* Menu end */
+/* Не вийшло зробити закреслення при активації чекбокса :( */
+
+/* Footer */
+.footer__container {
+    background-color: #4A4F56;
+}
+
+.sub-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #FF8984;
+    margin: 45px;
+    padding: 15px;
+}
+
+/* Footer end */
