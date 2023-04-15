@@ -79,6 +79,7 @@ a {
 
 /* About-me */
 .about-me {
+    padding: 100px 0;
     background-color: #F6F6F6;
 }
 
@@ -87,7 +88,7 @@ a {
     font-weight: 700;
     font-size: 34px;
     line-height: 46px;
-    /* Як зробити відступ зверху? */
+    margin-bottom: 50px;
 }
 
 .about-me__list {
@@ -97,13 +98,12 @@ a {
     align-items: center;
     padding: 0px;
     gap: 30px;
-    /* Як зробити контейнер і зробити песередині, як в макеті? */
-    /* Як зробити відступ знизу? */
 }
 
 /* About-me end */
 
 /* Skills */
+
 .skills__title {
     font-style: normal;
     font-weight: 700;
@@ -125,6 +125,7 @@ a {
     align-items: center;
     padding: 0px;
     gap: 97px;
+    margin-bottom: 100px;
 }
 
 /* Skills end */
@@ -132,6 +133,7 @@ a {
 /* Portfolio */
 .portfolio {
     background-color: #F6F6F6;
+    padding: 100px 0;
 }
 
 .sub-title.portfolio__title {
@@ -140,14 +142,12 @@ a {
     font-size: 34px;
     line-height: 46px;
     margin: 100px 0 50px 0;
-    /* Як зробити відступ зверху? */
 }
 
 .portfolio__text {
     text-align: center;
     text-decoration-line: underline;
     margin: 40px 0 70px 0;
-    /* Як зробити відступ знизу? */
 }
 
 /* Portfolio end */
