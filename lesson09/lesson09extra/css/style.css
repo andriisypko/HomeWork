@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+/* global */
+
+.container {
+    min-width: 980px;
+    max-width: 1370px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    background-color: #3399CC;
+    border: 20px solid #2b81ac;
+    min-height: 100vh;
+    min-width: 980px;
+}
+
+body {
+    color: #FFFFFF;
+    font-family: 'Lucida Sans Unicode' sans-serif;
+}
+
+i {
+    font-family: 'Weather Icons';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 61px;
+}
+
+/* weather */
+
+.weather__title {
+    font-size: 21px;
+    line-height: 25px;
+    margin-top: 66px;
+    margin-left: 135px;
+}
+
+.weather__list {
+    font-size: 0;
+    text-align: center;
+    margin: 40px 135px 37px;
+    border: 2px solid #FFFFFF;
+}
+
+.weather__item {
+    display: inline-block;
+    font-size: 22px;
+    line-height: 26px;
+    border: 2px solid #FFFFFF;
+    padding: 10px 0;
+    cursor: pointer;
+    opacity: .8;
+}
+
+.weather__item:hover {
+    opacity: 1;
+}
+
+.weather__text {
+    padding: 20px;
+}
+
+.weather__itemname {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    padding: 20px 0 0;
+}
+
+.weather__item:nth-child(1) {
+    width: 50%;
+    background-color: #3399CC;
+}
+
+.weather__item:nth-child(2) {
+    width: 25%;
+    background-color: #33CCCC;
+}
+
+.weather__item:nth-child(3) {
+    width: 25%;
+    background-color: #996699;
+}
+
+.weather__item:nth-child(4) {
+    width: 25%;
+    background-color: #C24747;
+}
+
+.weather__item:nth-child(5) {
+    width: 25%;
+    background-color: #E2674A;
+}
+
+.weather__item:nth-child(6) {
+    width: 25%;
+    background-color: #FFCC66;
+}
+
+.weather__item:nth-child(7) {
+    width: 25%;
+    background-color: #99CC99;
+}
+
+.weather__item:nth-child(8) {
+    width: 25%;
+    background-color: #669999;
+}
+
+.weather__item:nth-child(9) {
+    width: 50%;
+    background-color: #CC6699;
+}
+
+.weather__item:nth-child(10) {
+    width: 25%;
+    background-color: #339966;
+}
+
+.weather__item:nth-child(11) {
+    width: 100%;
+    background-color: #666699;
+}
+
+.footer__text {
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 66px;
+    margin-left: 135px;
+}
