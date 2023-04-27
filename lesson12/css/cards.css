@@ -1,0 +1,151 @@
+/* Global */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+body {
+    color: var(--color-black);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* Global end */
+
+:root {
+    /* fonts */
+    --lang-fonts: "Tourney", sans-serif;
+    --link-fonts: "Staatliches", sans-serif;
+    --title-fonts: "'Roboto'", sans-serif;
+    /* Colors */
+    --color-black: #000;
+
+    /* Sizing */
+    --maintitle-fonts: 600 36px/48px var(--title-fonts);
+    --language-fonts: 600 22px/18px var(--lang-fonts);
+    --header-fonts: 400 22px/28px var(--link-fonts);
+}
+
+/* Header */
+
+.header__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    margin: 13px auto 83px;
+    padding: 0 10px;
+    gap: 50px;
+    position: relative;
+}
+
+.header__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__link {
+    color: var(--color-black);
+    font: var(--header-fonts);
+}
+
+.logo {
+    width: 238px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.header__lang {
+    font: var(--language-fonts);
+    color: var(--color-black);
+}
+
+.header__item:not(:last-child)::after {
+    content: " / ";
+    padding: 10px;
+}
+
+/* Header end */
+
+/* Cards */
+
+.title-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.black-line {
+    width: 100px;
+    height: 8px;
+    background-color: var(--color-black);
+}
+
+.cards__title {
+    font: var(--maintitle-fonts);
+    letter-spacing: 0.04em;
+}
+
+.contenr-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: #BFBFBF;
+    padding: 20px 0;
+    gap: 30px;
+}
+
+.img+.img-hover {
+    width: 270px;
+    height: 180px;
+}
+
+.content {
+    position: relative;
+}
+
+.img-hover {
+    position: absolute;
+    transform: rotateX(0deg);
+    top: 0;
+    visibility: hidden;
+}
+
+
+.content:hover .img-hover {
+    visibility: visible;
+    transform: rotateX(360deg);
+    transition: 2s;
+}
+
+.content:hover .img {
+    visibility: hidden;
+}

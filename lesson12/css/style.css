@@ -1,0 +1,173 @@
+/* Global */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+body {
+    color: var(--color-black);
+    font: var(--text-fonts);
+}
+
+
+/* Global end */
+
+:root {
+    /* fonts */
+    --main-fonts: "PT Sans", sans-serif;
+    --lang-fonts: "Tourney", sans-serif;
+    --link-fonts: "Staatliches", sans-serif;
+    --title-nav-fonts: "Francois One", sans-serif;
+    --spam-fonts: "Farro", sans-serif;
+    /* Colors */
+    --color-black: #000;
+
+    /* Sizing */
+    --title-fonts: 400 36px/48px var(--title-nav-fonts);
+    --language-fonts: 600 22px/18px var(--lang-fonts);
+    --header-fonts: 400 22px/28px var(--link-fonts);
+    --text-fonts: 400 28px/48px var(--main-fonts);
+    --chapter-fonts: 300 20px/20px var(--spam-fonts);
+}
+
+/* Header */
+
+.header__container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    margin: 13px auto 83px;
+    padding: 0 10px;
+    gap: 50px;
+    position: relative;
+}
+
+.header__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__link {
+    font: var(--header-fonts);
+    color: var(--color-black);
+}
+
+.logo {
+    width: 238px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.header__lang {
+    font: var(--language-fonts);
+    color: var(--color-black);
+}
+
+.header__item:not(:last-child)::after {
+    content: " / ";
+    padding: 10px;
+}
+
+/* Header end */
+
+
+/* Main */
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    position: relative;
+}
+
+.content__article {
+    margin-bottom: 70px;
+}
+
+.black-line {
+    width: 100px;
+    height: 8px;
+
+    background: #000000;
+}
+
+.title {
+    font: var(--title-fonts);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin: 20px auto 40px;
+    position: relative;
+}
+
+.text {
+    padding: 40px 0;
+}
+
+.chapter {
+    position: absolute;
+    top: 0;
+    font: var(--chapter-fonts);
+    letter-spacing: 0.04em;
+    text-transform: none;
+}
+
+.bg-picture {
+    width: 760px;
+    position: fixed;
+    right: 0;
+    z-index: -1;
+}
+
+.content__text-bg {
+    background-color: rgb(207, 204, 204);
+}
+
+
+/* Main end */
+
+/* Aside */
+.aside-menu {
+    flex-shrink: 0;
+    min-width: 385px;
+    position: relative;
+    padding-right: 30px;
+}
+
+.aside-menu__nav {
+    position: sticky;
+    top: 90px;
+}
+
+.aside-menu__item {
+    font: var(--title-fonts);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+    border-bottom: 1px solid #BDBDBD;
+}
+
+.aside-menu__link {
+    color: var(--color-black);
+}
+
+/* Aside end */
