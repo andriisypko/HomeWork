@@ -134,7 +134,7 @@ body {
 
 .img-hover {
     position: absolute;
-    transform: rotateX(0deg);
+    transform: rotateX(275deg);
     top: 0;
     visibility: hidden;
 }
