@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container header__container">
+                <nav class="header__nav">
+                    <a class="header__logo" href="">
+                        <svg width="140" height="66" viewBox="0 0 140 66" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M68.1455 35.9848L72.722 38.3558C71.7651 39.6044 70.5655 40.6072 69.1232 41.3643C67.6809 42.1214 66.1069 42.5 64.4011 42.5C62.4873 42.5 60.7399 42.0285 59.159 41.0854C57.5919 40.1423 56.3368 38.8805 55.3937 37.2998C54.4646 35.7059 54 33.9459 54 32.0199C54 30.5588 54.2704 29.1973 54.8113 27.9355C55.3521 26.6603 56.0941 25.5446 57.0371 24.5882C57.994 23.6186 59.1035 22.8615 60.3655 22.3169C61.6275 21.7723 62.9727 21.5 64.4011 21.5C66.1069 21.5 67.6809 21.8786 69.1232 22.6357C70.5655 23.3928 71.7651 24.4089 72.722 25.6841L68.1455 28.0351C67.6601 27.5038 67.0846 27.092 66.4189 26.7998C65.7671 26.5076 65.0945 26.3615 64.4011 26.3615C63.4026 26.3615 62.5012 26.6271 61.6968 27.1584C60.8925 27.6765 60.2545 28.3672 59.783 29.2305C59.3115 30.0806 59.0757 31.0104 59.0757 32.0199C59.0757 33.0161 59.3115 33.9459 59.783 34.8093C60.2545 35.6594 60.8925 36.3435 61.6968 36.8615C62.5012 37.3795 63.4026 37.6385 64.4011 37.6385C65.1223 37.6385 65.8087 37.4924 66.4605 37.2002C67.1123 36.8947 67.674 36.4896 68.1455 35.9848Z"
+                                fill="#1D1E25" />
+                            <path
+                                d="M84.9596 42.5C83.0458 42.5 81.2984 42.0285 79.7174 41.0854C78.1503 40.1423 76.8952 38.8805 75.9522 37.2998C75.023 35.7059 74.5585 33.9459 74.5585 32.0199C74.5585 30.5588 74.8289 29.1973 75.3697 27.9355C75.9106 26.6603 76.6525 25.5446 77.5956 24.5882C78.5525 23.6186 79.6619 22.8615 80.9239 22.3169C82.1859 21.7723 83.5312 21.5 84.9596 21.5C86.8734 21.5 88.6138 21.9715 90.1809 22.9146C91.7619 23.8577 93.017 25.1262 93.9461 26.7201C94.8892 28.314 95.3607 30.0806 95.3607 32.0199C95.3607 33.4677 95.0903 34.8226 94.5494 36.0844C94.0085 37.3463 93.2597 38.4621 92.3028 39.4317C91.3597 40.388 90.2572 41.1385 88.9952 41.6831C87.7471 42.2277 86.4019 42.5 84.9596 42.5ZM84.9596 37.6385C85.9719 37.6385 86.8803 37.3795 87.6847 36.8615C88.489 36.3435 89.12 35.6594 89.5777 34.8093C90.0492 33.9592 90.2849 33.0294 90.2849 32.0199C90.2849 30.9839 90.0422 30.0408 89.5569 29.1907C89.0853 28.3273 88.4405 27.6433 87.6223 27.1385C86.8179 26.6205 85.9303 26.3615 84.9596 26.3615C83.9611 26.3615 83.0596 26.6205 82.2553 27.1385C81.4509 27.6565 80.813 28.3472 80.3415 29.2106C79.87 30.074 79.6342 31.0104 79.6342 32.0199C79.6342 33.0693 79.8769 34.019 80.3623 34.8691C80.8477 35.7192 81.4925 36.3966 82.2969 36.9013C83.1151 37.3928 84.0027 37.6385 84.9596 37.6385Z"
+                                fill="#1D1E25" />
+                            <path
+                                d="M111.578 35.9848L116.155 38.3558C115.198 39.6044 113.998 40.6072 112.556 41.3643C111.114 42.1214 109.54 42.5 107.834 42.5C105.92 42.5 104.173 42.0285 102.592 41.0854C101.025 40.1423 99.7696 38.8805 98.8265 37.2998C97.8974 35.7059 97.4328 33.9459 97.4328 32.0199C97.4328 30.5588 97.7032 29.1973 98.2441 27.9355C98.7849 26.6603 99.5269 25.5446 100.47 24.5882C101.427 23.6186 102.536 22.8615 103.798 22.3169C105.06 21.7723 106.405 21.5 107.834 21.5C109.54 21.5 111.114 21.8786 112.556 22.6357C113.998 23.3928 115.198 24.4089 116.155 25.6841L111.578 28.0351C111.093 27.5038 110.517 27.092 109.852 26.7998C109.2 26.5076 108.527 26.3615 107.834 26.3615C106.835 26.3615 105.934 26.6271 105.13 27.1584C104.325 27.6765 103.687 28.3672 103.216 29.2305C102.744 30.0806 102.509 31.0104 102.509 32.0199C102.509 33.0161 102.744 33.9459 103.216 34.8093C103.687 35.6594 104.325 36.3435 105.13 36.8615C105.934 37.3795 106.835 37.6385 107.834 37.6385C108.555 37.6385 109.242 37.4924 109.893 37.2002C110.545 36.8947 111.107 36.4896 111.578 35.9848Z"
+                                fill="#1D1E25" />
+                            <path
+                                d="M134.924 22.0579H140V41.982H134.924L134.695 39.5114C134.127 40.4013 133.371 41.1252 132.428 41.6831C131.499 42.2277 130.396 42.5 129.12 42.5C127.581 42.5 126.139 42.2211 124.794 41.6632C123.448 41.1053 122.263 40.3349 121.236 39.352C120.224 38.3691 119.427 37.2334 118.844 35.945C118.276 34.6565 117.991 33.2751 117.991 31.8008C117.991 30.3795 118.262 29.0446 118.803 27.796C119.357 26.5474 120.127 25.4516 121.112 24.5085C122.096 23.5655 123.233 22.8283 124.523 22.297C125.813 21.7657 127.2 21.5 128.684 21.5C130.057 21.5 131.284 21.7922 132.366 22.3767C133.461 22.9611 134.39 23.7049 135.153 24.6082L134.924 22.0579ZM128.996 37.8178C130.077 37.8178 131.034 37.5588 131.866 37.0408C132.698 36.5228 133.35 35.8254 133.822 34.9488C134.293 34.0588 134.529 33.0825 134.529 32.0199C134.529 30.944 134.293 29.9677 133.822 29.0911C133.35 28.2011 132.691 27.4972 131.846 26.9791C131.013 26.4611 130.063 26.2021 128.996 26.2021C127.928 26.2021 126.95 26.4677 126.062 26.9991C125.189 27.5171 124.488 28.2144 123.961 29.0911C123.448 29.9677 123.192 30.944 123.192 32.0199C123.192 33.0958 123.455 34.0721 123.982 34.9488C124.509 35.8254 125.21 36.5228 126.083 37.0408C126.971 37.5588 127.942 37.8178 128.996 37.8178Z"
+                                fill="#1D1E25" />
+                            <circle cx="21" cy="30.5" r="21" fill="#24AA4A" />
+                            <path
+                                d="M27.4483 35.4412L32 37.741C30.8906 39.1831 29.4794 40.3368 27.7664 41.2021C26.0697 42.0674 24.2262 42.5 22.2358 42.5C19.9844 42.5 17.9288 41.9611 16.069 40.8833C14.2254 39.8055 12.749 38.3634 11.6396 36.5569C10.5465 34.7353 10 32.7239 10 30.5228C10 28.8529 10.3181 27.297 10.9544 25.8548C11.5907 24.3975 12.4635 23.1224 13.5729 22.0294C14.6986 20.9213 16.0037 20.056 17.4883 19.4336C18.9729 18.8112 20.5554 18.5 22.2358 18.5C24.2262 18.5 26.0697 18.9326 27.7664 19.7979C29.4794 20.6632 30.8906 21.8245 32 23.2818L27.4483 25.5816C26.7631 24.8226 25.9637 24.2457 25.0501 23.851C24.1364 23.4412 23.1984 23.2362 22.2358 23.2362C20.898 23.2362 19.6826 23.5778 18.5895 24.2609C17.5128 24.9288 16.6563 25.8169 16.02 26.925C15.4001 28.018 15.0901 29.2173 15.0901 30.5228C15.0901 31.8131 15.4082 33.0123 16.0445 34.1205C16.6808 35.2135 17.5373 36.0939 18.614 36.7619C19.7071 37.4298 20.9143 37.7638 22.2358 37.7638C23.2473 37.7638 24.2099 37.5512 25.1235 37.1262C26.0371 36.7011 26.812 36.1395 27.4483 35.4412Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a class="header__link" href="#">About</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#">Blog</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="header__btn btn">Sign In </button>
+                <div class="header__hamb">
+                    <div class="header__hamb-line header__hamb-line--top"></div>
+                    <div class="header__hamb-line header__hamb-line--middle"></div>
+                    <div class="header__hamb-line header__hamb-line--middle2nd"></div>
+                    <div class="header__hamb-line header__hamb-line--bottom"></div>
+                </div>
+            </div>
+        </header>
+
+        <section class="about-us">
+            <div class="container about-us__container">
+                <div class="about-us__content">
+                    <div class="about-us__text-content">
+                        <h3 class="about-us__subtitle">Coworking Spaces for All</h3>
+                        <h1 class="about-us__title">The best coworking in NYC</h1>
+                        <p class="about-us__text">Coworking is all about being your own boss, and that's why
+                            it's such a great fit for freelancers. But it can be hard to
+                            know what you're getting into when you first star out.
+                        </p>
+                        <button class="btn about-us__bnt">
+                            <p class="bnt-text">See Availability</p>
+                            <img class="arrow" src="./img/arrow.png" alt="arrrow">
+                        </button>
+                    </div>
+                    <div class="about-us__photo-content">
+                        <img class="about-us__img" src="./img/Image.png" alt="#">
+                        <div class="about-us__card">
+                            <div class="card-visitors">
+                                <img class="hero-img" src="./img/hero1.png" alt="hero1">
+                                <img class="hero-img" src="./img/hero2.png" alt="hero2">
+                                <img class="hero-img" src="./img/hero3.png" alt="hero3">
+                                <img class="hero-img" src="./img/hero4.png" alt="hero4">
+                                <img class="hero-img" src="./img/hero5.png" alt="hero5">
+                            </div>
+                            <h4 class="about-us__card-title">5K+</h4>
+                            <p class="about-us__card-text">Visitors per month</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="guide">
+            <div class="guide__container container">
+                <div class="guide__content">
+                    <div class="guide__photo-content">
+                        <img class="guide__img img" src="./img/Image (1).png" alt="">
+                        <div class="guide__card">
+                            <h4 class="guide__card-title">30+</h4>
+                            <p class="guide__card-text">Rooms available</p>
+                        </div>
+                    </div>
+                    <div class="guide__text-content">
+                        <h2 class="guide__title">Coworking Spaces for Startup</h2>
+                        <p class="guide__text">This guide will give you an overview of the different types of
+                            coworking spacesavailable, and help you decide which one is
+                            right for you.</p>
+                        <button class="btn">Get Workspace</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="features__container container">
+                <div class="features__content">
+                    <div class="features__text-content">
+                        <h2 class="features__title">The Ultimate Guide to Coworking Spaces</h2>
+                        <p class="features__text">The Ultimate Guide to Coworking Spaces - This isn't
+                            just a list of coworking spaces—it also includes tips on
+                            how to find the best one for your needsand what to
+                            look out for when choosing one.</p>
+                        <div class="features__list">
+                            <div class="features__item">
+                                <h4 class="item-title">25</h4>
+                                <p class="item-text">Meeting Rooms</p>
+                            </div>
+                            <div class="features__item">
+                                <h4 class="item-title">30</h4>
+                                <p class="item-text">Event Spaces</p>
+                            </div>
+                            <div class="features__item">
+                                <h4 class="item-title">45</h4>
+                                <p class="item-text">Working Spaces</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="features__img img" src="./img/Image (2).png" alt="room">
+                    <img class="elipse" src="./img/Ellipse 129.png" alt="elips">
+                </div>
+            </div>
+        </section>
+
+        <section class="blog">
+            <div class="blog__container container">
+                <div class="blog__text-content">
+                    <h2 class="blog__title">How to Find the Perfect
+                        Coworking Space</h2>
+                    <p class="blog__text">If you want more specific advice on finding the right
+                        space, this article will tell you exactly how to do it!</p>
+                </div>
+                <div class="blog__photo-content">
+                    <div class="blog__item">
+                        <img class="blog__img img" src="./img/Image (3).png" alt="">
+                        <h4 class="blog__item-title">Are Coworking Spaces Right
+                            for You?</h4>
+                    </div>
+                    <div class="blog__item">
+                        <img class="blog__img img" src="./img/Image (4).png" alt="">
+                        <h4 class="blog__item-title">The Benefits of Coworking
+                            Spaces for Small Businesses</h4>
+                    </div>
+                    <div class="blog__item">
+                        <img class="blog__img img" src="./img/Image (5).png" alt="">
+                        <h4 class="blog__item-title">How to Find the Best
+                            Coworking Spaces for You</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="facilities">
+            <div class="facilities__container container">
+                <div class="facilities__text-content">
+                    <h2 class="facilities__title">When you need an
+                        inspiring place to work</h2>
+                    <p class="facilities__text">This guide will give you an overview of the different types of coworking
+                        spaces available, and help you decide which one is right for you.</p>
+                </div>
+                <img class="facilities__img img" src="./img/Rectangle 39887.png" alt="">
+                <div class="facilities__advantages">
+                    <div class="facilities__item">
+                        <img class="facilities__item-img" src="./img/Group.png" alt="">
+                        <h5 class="facilities__item-title">Wi-Fi Network Availability</h5>
+                    </div>
+                    <div class="facilities__item">
+                        <img class="facilities__item-img" src="./img/Group (1).png" alt="">
+                        <h5 class="facilities__item-title">Affordable Prices</h5>
+                    </div>
+                    <div class="facilities__item">
+                        <img class="facilities__item-img" src="./img/Group (2).png" alt="">
+                        <h5 class="facilities__item-title">Comfortable Workspace</h5>
+                    </div>
+                    <div class="facilities__item">
+                        <img class="facilities__item-img" src="./img/Group (3).png" alt="">
+                        <h5 class="facilities__item-title">Wide Parking Area</h5>
+                    </div>
+                    <div class="facilities__item">
+                        <img class="facilities__item-img" src="./img/Group (4).png" alt="">
+                        <h5 class="facilities__item-title">Restroom and Mosque</h5>
+                    </div>
+                    <div class="facilities__item">
+                        <img class="facilities__item-img" src="./img/Group (5).png" alt="">
+                        <h5 class="facilities__item-title">24-hours Admin Helps</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial">
+            <div class="testimonial__container container">
+                <div class="testimonial__content">
+                    <img class="c-word" src="./img/c.png" alt="C">
+                    <img class="testimonial__img img" src="./img/image 38.png" alt="zhafira">
+                    <div class="testimonial__text-content">
+                        <h2 class="testimonial__title">
+                            What our customer
+                            says about Coca
+                            Workspace
+                        </h2>
+                        <p class="testimonial__text">
+                            “Really incredible space for me and my team to
+                            every single day work. It has a lot of facilities
+                            and we can connect with other agency also
+                            freelancer in here. So far I’m happy to be here
+                            and hopefully I can make a same concept like
+                            this workspace. Cheerss!!!”
+                        </p>
+                        <h4 class="testimonial__subtitle">Zhafira Aduhai</h4>
+                        <p class="testimonial__hero-text">Project Manager at Microsoft</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__header">
+                    <a href="">
+                        <svg class="footer__logo" width="60" height="60" viewBox="0 0 60 60" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="30" cy="30" r="30" fill="#24AA4A" />
+                            <path
+                                d="M39.2122 37.0591L45.7147 40.3445C44.1299 42.4047 42.1139 44.0529 39.6667 45.289C37.2429 46.5251 34.6092 47.1431 31.7659 47.1431C28.5496 47.1431 25.613 46.3733 22.9561 44.8336C20.3225 43.2939 18.2132 41.2337 16.6284 38.653C15.0669 36.0507 14.2861 33.1773 14.2861 30.0328C14.2861 27.6473 14.7406 25.4245 15.6496 23.3643C16.5585 21.2825 17.8054 19.4608 19.3902 17.8994C20.9984 16.3164 22.8629 15.0802 24.9837 14.1911C27.1046 13.302 29.3653 12.8574 31.7659 12.8574C34.6092 12.8574 37.2429 13.4755 39.6667 14.7116C42.1139 15.9477 44.1299 17.6067 45.7147 19.6885L39.2122 22.974C38.2334 21.8897 37.0914 21.0656 35.7862 20.5018C34.4811 19.9162 33.1409 19.6235 31.7659 19.6235C29.8548 19.6235 28.1184 20.1114 26.5569 21.0873C25.0187 22.0415 23.7951 23.3101 22.8862 24.8932C22.0005 26.4546 21.5577 28.1678 21.5577 30.0328C21.5577 31.8761 22.0122 33.5893 22.9211 35.1724C23.8301 36.7338 25.0537 37.9916 26.5919 38.9458C28.1534 39.9 29.8781 40.3771 31.7659 40.3771C33.2109 40.3771 34.5859 40.0735 35.8911 39.4663C37.1962 38.859 38.3033 38.0567 39.2122 37.0591Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <div class="footer__btn-container">
+                        <p class="footer__btn-text">Ready to get started?</p>
+                        <button class="btn footer1-bnt">Get started</button>
+                    </div>
+                </div>
+                <div class="footer__body">
+                    <div class="footer__form">
+                        <h4 class="footer__form-title">
+                            Subscribe to our
+                            newsletter
+                        </h4>
+                        <div class="footer__form-input">
+                            <input class="input" type="email" placeholder="Email address">
+                            <button class="btn footer2-btn">
+                                <img class="arrow2" src="./img/arrow2.png" alt="arrow">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="footer__navs">
+                        <nav class="footer__services">
+                            <h3 class="footer__nav-title">Services</h3>
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a class="footer__link" href="">Email Marketing</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="">Campaigns</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="">Branding</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="">Offline</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav class="footer__about">
+                            <h3 class="footer__nav-title">About</h3>
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a class="footer__link" href="">Our Story</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="">Benefits</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="">Team</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="">Careers</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav class="footer__help">
+                            <h3 class="footer__nav-title">Help</h3>
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a class="footer__link" href="">FAQs</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="">Contact Us</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer__footer">
+                    <div class="footer__terms">
+                        <ul class="terms-list">
+                            <li class="terms-item">
+                                <a class="terms-link" href="">Terms &amp; Conditions</a>
+                            </li>
+                            <li class="terms-item">
+                                <a class="terms-link" href="">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__social">
+                        <ul class="social-list">
+                            <li class="social-item">
+                                <a class="social-link" href="">
+                                    <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.83691 0H16.0869C19.8833 0 22.9619 3.07862 22.9619 6.875V15.125C22.9619 18.9214 19.8833 22 16.0869 22H7.83691C4.04054 22 0.961914 18.9214 0.961914 15.125V6.875C0.961914 3.07862 4.04054 0 7.83691 0ZM16.0869 19.9375C18.7407 19.9375 20.8994 17.7787 20.8994 15.125V6.875C20.8994 4.22125 18.7407 2.0625 16.0869 2.0625H7.83691C5.18316 2.0625 3.02441 4.22125 3.02441 6.875V15.125C3.02441 17.7787 5.18316 19.9375 7.83691 19.9375H16.0869Z"
+                                            fill="#24AA4A" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M6.46191 11C6.46191 7.96263 8.92454 5.5 11.9619 5.5C14.9993 5.5 17.4619 7.96263 17.4619 11C17.4619 14.0374 14.9993 16.5 11.9619 16.5C8.92454 16.5 6.46191 14.0374 6.46191 11ZM8.52441 11C8.52441 12.8948 10.0672 14.4375 11.9619 14.4375C13.8567 14.4375 15.3994 12.8948 15.3994 11C15.3994 9.10388 13.8567 7.5625 11.9619 7.5625C10.0672 7.5625 8.52441 9.10388 8.52441 11Z"
+                                            fill="#24AA4A" />
+                                        <circle cx="17.8745" cy="5.08737" r="0.732875" fill="#24AA4A" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a class="social-link" href="">
+                                    <svg width="10" height="20" viewBox="0 0 10 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.11163 3.29509H9.92331V0.139742C9.61075 0.0967442 8.53581 0 7.28393 0C4.67183 0 2.88248 1.643 2.88248 4.66274V7.44186H0V10.9693H2.88248V19.845H6.41654V10.9701H9.18243L9.6215 7.44269H6.41571V5.01251C6.41654 3.99297 6.69106 3.29509 8.11163 3.29509Z"
+                                            fill="#24AA4A" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a class="social-link" href="">
+                                    <svg width="23" height="18" viewBox="0 0 23 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22.9619 2.11613C22.1438 2.475 21.272 2.71288 20.3632 2.82838C21.2982 2.27013 22.0118 1.39287 22.3473 0.3355C21.4755 0.85525 20.513 1.22238 19.4873 1.42725C18.6595 0.545875 17.4798 0 16.1928 0C13.6958 0 11.6855 2.02675 11.6855 4.51137C11.6855 4.86888 11.7158 5.21263 11.79 5.53988C8.04041 5.357 4.72254 3.55988 2.49366 0.82225C2.10454 1.49738 1.87629 2.27012 1.87629 3.102C1.87629 4.664 2.68066 6.04862 3.87966 6.85025C3.15504 6.8365 2.44416 6.62613 1.84191 6.29475C1.84191 6.3085 1.84191 6.32638 1.84191 6.34425C1.84191 8.536 3.40529 10.3565 5.45541 10.7759C5.08829 10.8763 4.68816 10.9244 4.27291 10.9244C3.98416 10.9244 3.69266 10.9079 3.41904 10.8474C4.00341 12.6335 5.66166 13.9466 7.63341 13.9893C6.09891 15.1896 4.15054 15.9129 2.04129 15.9129C1.67141 15.9129 1.31666 15.8964 0.961914 15.851C2.95979 17.1394 5.32754 17.875 7.88091 17.875C16.1804 17.875 20.7179 11 20.7179 5.04075C20.7179 4.84137 20.711 4.64887 20.7014 4.45775C21.5965 3.8225 22.3487 3.02913 22.9619 2.11613Z"
+                                            fill="#24AA4A" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
