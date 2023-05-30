@@ -806,7 +806,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 69px 24px 74px 24px;
+        padding: 69px 0 74px;
     }
 
     .features__text {
